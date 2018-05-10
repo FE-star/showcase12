@@ -2,7 +2,7 @@
  * @Author: kael 
  * @Date: 2018-05-10 21:11:34 
  * @Last Modified by: kael
- * @Last Modified time: 2018-05-10 22:11:49
+ * @Last Modified time: 2018-05-10 22:22:34
  */
 
 const logger = require('./utils/logger')();
@@ -19,13 +19,17 @@ const etag = require('koa-etag')();
 app.keys = ['appkeys'];
 
 const error = require('./middlewares/error');
+const cors = require('./middlewares/cors');
+const params = require('./middlewares/params');
 
 app
   .use(error)
+  .use(cors)
   .use(conditional)
   .use(etag)
   .use(compress)
   .use(bodyparser)
+  .use(params)
 
 const fs = require('fs');
 const path = require('path');
