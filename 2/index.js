@@ -2,10 +2,10 @@
  * @Author: kael 
  * @Date: 2018-05-10 21:11:34 
  * @Last Modified by: kael
- * @Last Modified time: 2018-05-10 22:01:17
+ * @Last Modified time: 2018-05-10 22:07:23
  */
 
-const logger = require('./utils/logger')();
+const logger = require('./utils/logger')('index');
 logger.info(`Bootstrapping application`);
 
 const Koa = require('koa');
