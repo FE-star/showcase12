@@ -14,5 +14,5 @@ process.on('uncaughtException', (err) => {
 ## 自定义中间件
 + 参考 ./middlewares/error.js 等
 
-> 这里可能需要定义很多中间件，比如：对参数的预处理、CORS 支持
+> 这里可能需要定义很多中间件，比如：对参数的预处理、CORS 支持、CSRF、监控告警等
 
