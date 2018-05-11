@@ -1,0 +1,25 @@
+{
+  "name": "showcase12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compress": "^3.0.0",
+    "koa-conditional-get": "^2.0.0",
+    "koa-etag": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "log4js": "^2.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "build": "docker build -t $npm_package_name:latest .",
+    "run": "docker run -d -it $npm_package_name:latest"
+  },
+  "author": "kael",
+  "license": "MIT"
+}
