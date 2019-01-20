@@ -4,9 +4,8 @@ RUN mkdir -p /app
 ADD .        /app
 WORKDIR      /app
 
-# ssh
-RUN mkdir /var/run/sshd -p
-EXPOSE 22
+# npm install
+RUN npm install
 
 ENV PORT=8000
 CMD ["node", "/app/index.js"]
