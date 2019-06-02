@@ -3,6 +3,11 @@
 ## 配置
 + 参考 ./config
 
+## 数据库
+```bash
+docker run -it -d -p 27017:27017 mongo
+```
+
 ## MVC
 + routers -> controllers
 + 添加 services, 参考 user.js
