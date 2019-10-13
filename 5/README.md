@@ -19,6 +19,7 @@ docker run -it -d -p 27017:27017 mongo
 + apache benchmark
 + ab -c 100 -n 10000 -k http://localhost:3000/test/delay?delay=300
 + 怎么优化？
++ cluster
 
 ## docker
 + 安装 docker
